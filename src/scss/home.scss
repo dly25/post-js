@@ -1,0 +1,80 @@
+.distribution {
+
+	// .distribution__container
+
+	&__container {
+	}
+
+	// .distribution__form
+
+	&__form {
+		margin-top: rem(10);
+		display: flex;
+		flex-direction: column;
+		margin-bottom: rem(20);
+
+	}
+
+	// .distribution__inp
+
+	&__inp {
+		border: 1px solid #000;
+
+		padding: rem(10);
+		margin-bottom: rem(16);
+		flex: 0 0 100%;
+	}
+
+	// .distribution__btn
+
+	&__btn {
+		padding: rem(10) rem(16);
+		margin-right: auto;
+
+		border: 1px solid #000;
+	}
+
+	// .distribution__posts
+
+	&__posts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .distribution__list-posts
+
+	&__list-posts{
+		margin: 0 auto;
+		margin-bottom: rem(10);
+
+		font-size: rem(36);
+		font-weight: 700;
+		
+	}
+	// .distribution__post
+
+	&__post {
+		margin-bottom: rem(15);
+		padding: rem(16);
+		flex: 0 0 100%;
+
+		border: rem(2.5) solid #12afd6;
+		
+	}
+
+	// .distribution__title
+
+	&__title {
+		font-size: rem(16);
+		font-weight: 700;
+
+		margin-bottom: rem(10);
+	}
+
+	// .distribution__text
+
+	&__text {
+		font-size: rem(16);
+		font-weight: 500;
+	}
+}

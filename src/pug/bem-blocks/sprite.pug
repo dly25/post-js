@@ -1,0 +1,7 @@
+//- Определение миксина bemVarsSvg с передачей аргументов className и id
+mixin bemVarsSvg(options)
+	- var className = options.className || '';
+	- var id = options.id || '';
+
+	svg(class=className)
+		use(xlink:href=`img/sprite.svg#${id}`)

@@ -1,0 +1,25 @@
+//- Вписываем шаблон
+extends pug/pug-blocks/head 
+block vars
+	- var siteTitle = 'Post-JS'; //Название сайта
+
+//- body
+block content
+	.wrapper
+		.content
+			include pug/pug-blocks/header
+			main.page
+				section.distribution
+					.distribution__container
+						.distribution__form
+							input(type="text" name="inputOne" placeholder="Напишите заголовок поста").distribution__inp
+							input(type="text" name="inputTwo" placeholder="Напишите текст поста").distribution__inp
+							button(name="button").distribution__btn.
+								Создать пост
+						.distribution__posts
+							.distribution__list-posts.
+								Список постов
+
+			include pug/pug-blocks/footer
+
+		include pug/pug-blocks/scripts
